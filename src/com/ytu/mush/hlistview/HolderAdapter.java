@@ -89,7 +89,7 @@ public class HolderAdapter extends BaseAdapter {
 					.findViewById(R.id.horizontalScrollView1);
 
 			holder.scrollView = scrollView1;
-			holder.txt1 = (TextView) convertView.findViewById(R.id.textView1);
+			holder.txt1 = (TextView) convertView.findViewById(R.id.tv1);
 			holder.txt2 = (TextView) convertView.findViewById(R.id.textView2);
 			holder.txt3 = (TextView) convertView.findViewById(R.id.textView3);
 			holder.txt4 = (TextView) convertView.findViewById(R.id.textView4);
@@ -118,6 +118,8 @@ public class HolderAdapter extends BaseAdapter {
 
 		return convertView;
 	}
+	
+	
 
 	class OnScrollChangedListenerImp implements OnScrollChangedListener {
 		MyHScrollView mScrollViewArg;

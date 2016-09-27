@@ -5,24 +5,37 @@
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
     android:padding="5dp" >
-
+<RelativeLayout 
+    android:id="@+id/Layout_fix"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content">"
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="80dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:textColor="#FFFFFF"
-        android:text="Column1"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_marginRight="0dp"
+        android:text="第一列"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+     <ImageView
+        android:id="@+id/IV1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sort_blue" />     
+    
+</RelativeLayout>
+      
 
-    <com.ytu.mush.hlistview.InterceptScrollContainer
+    <com.ytu.mush.hlistview.InterceptScrollContainer_Header
         android:id="@+id/scroollContainter"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/tv1"
+        android:layout_toRightOf="@id/Layout_fix"
         android:focusable="false" >
 
         <com.ytu.mush.hlistview.MyHScrollView
@@ -40,24 +53,37 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="80dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:text="Column2"
-                    android:textColor="#FFFFFF"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:layout_marginRight="0dp"
+                    android:text="第二列"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/IV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/sort_blue" />
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="80dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="0dp"                 
                     android:text="第三列"
-                    android:textColor="#FFFFFF"
-                    android:onClick="doClick()"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/IV3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/sort_blue" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -66,8 +92,8 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:text="Column4"
-                    android:textColor="#FFFFFF"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -76,8 +102,8 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:text="Column5"
-                    android:textColor="#FFFFFF"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -86,8 +112,8 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:text="Column6"
-                    android:textColor="#FFFFFF"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -96,10 +122,10 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:text="Column7"
-                    android:textColor="#FFFFFF"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
         </com.ytu.mush.hlistview.MyHScrollView>
-    </com.ytu.mush.hlistview.InterceptScrollContainer>
+    </com.ytu.mush.hlistview.InterceptScrollContainer_Header>
 
 </RelativeLayout>

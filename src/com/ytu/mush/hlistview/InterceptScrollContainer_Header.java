@@ -7,15 +7,15 @@ import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
 
-public class InterceptScrollContainer extends LinearLayout {
-	private static final String TAG = "InterceptScrollContainer";
+public class InterceptScrollContainer_Header extends LinearLayout {
+	private static final String TAG = "InterceptScrollContainer_Header";
 
-	public InterceptScrollContainer(Context context, AttributeSet attrs) {
+	public InterceptScrollContainer_Header(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		
 	}
 
-	public InterceptScrollContainer(Context context) {
+	public InterceptScrollContainer_Header(Context context) {
 		super(context);
 		
 	}
@@ -27,8 +27,8 @@ public class InterceptScrollContainer extends LinearLayout {
 	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
 		
-		Log.i(TAG,"onInterceptTouchEvent");
-		return true;		
+		Log.i(TAG,"onInterceptTouchEvent_Header");		
+		return false;
 		//return super.onInterceptTouchEvent(ev);
 	}
 }
